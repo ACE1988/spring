@@ -1,6 +1,5 @@
 ## 原理图
- * [![weibo-logo]](https://github.com/ACE1988/spring/blob/master/191439034705767.png)
-
+ ![img](191439034705767.png)
 
 ## mvc 工作原理
  
