@@ -3,7 +3,7 @@
    AOP(Aspect Oriented Programming)，是面向切面编程的技术。AOP基于IoC基础，是对OOP的有益补充
    AOP之所以能得到广泛认可，主要是因为它将应用系统拆分分了2个部分：核心业务逻辑（Core business concerns）及横向的通用逻辑，也就是所谓的切面Crosscutting enterprise concerns。例如，所有大中型应用都要涉及到的持久化管理（Persistent）、事务管理（Transaction Management）、权限管理（Privilege Management）、日志管理（Logging）和调试管理（Debugging）等。使用AOP技术，可以让开发人员只专注核心业务，而通用逻辑则使用AOP技术进行横向切入，
    由专人去处理这些通用逻辑，会使得任务简单明了，提高开发和调试的效率。
-   [!img]()
+   ![img](20131211095455406.jpg)
    
 ## 基本概念
    ### 要想了解AOP，首先得了解几个重要的基本概念：
@@ -15,6 +15,7 @@
  * 目标对象（Target Object）：包含连接点的对象，也被称作被通知或被代理对象。
  * AOP代理（AOP Proxy）：AOP框架创建的对象，包含通知。在Spring中，AOP代理可以是JDK动态代理或CGLIB代理。
  * 编织（Weaving）：组装方面来创建一个被通知对象。这可以在编译时完成（例如使用AspectJ编译器），也可以在运行时完成。Spring和其他纯Java AOP框架一样，在运行时完成织入。
+ ![img](20131211093958187.jpg)
  
  ## 各种通知（Advice）类型 
   ### 为了符合各种流程处理，通知类型提供了5种，可以对目标方法进行全方位处理：
@@ -28,9 +29,9 @@
   * ApplicationContext中在<aop:aspect>里面使用<aop:around>元素进行声明。
   * Afterthrowing advice：在方法抛出异常退出时执行的通知。
   * ApplicationContext中在<aop:aspect>里面使用<aop:after-throwing>元素进行声明
-  [!img]()
+  ![img](20131211234008546.png)
   
-  [!img]()
+  ![img](20131212093444812.png)
   
   ## AOP 2种代理的区别
      ### AOP支持2种代理，Jdk的动态代理和CGLIB实现机制。二者有什么区别呢：
