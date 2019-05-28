@@ -29,9 +29,8 @@
   * ApplicationContext中在<aop:aspect>里面使用<aop:around>元素进行声明。
   * Afterthrowing advice：在方法抛出异常退出时执行的通知。
   * ApplicationContext中在<aop:aspect>里面使用<aop:after-throwing>元素进行声明
-  ![img](20131211234008546.png)
-  
-  ![img](20131212093444812.png)
+   ![img](20131211234008546.png)
+   ![img](20131212093444812.png)
   
   ## AOP 2种代理的区别
    ### AOP支持2种代理，Jdk的动态代理和CGLIB实现机制。二者有什么区别呢：
