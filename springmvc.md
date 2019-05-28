@@ -1,4 +1,9 @@
-# mvc 工作原理
+## 原理图
+ * [![weibo-logo]](https://github.com/ACE1988/spring/blob/master/191439034705767.png)
+
+
+## mvc 工作原理
+ 
  * 发起请求到前端控制器(DispatcherServlet);
 
  * 前端控制器请求HandlerMapping查找Handler，可以根据xml配置、注解进行查找；
